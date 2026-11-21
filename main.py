@@ -1,3 +1,8 @@
+"""Writes the entry text for make.fun's 'Make the AI judge feel brave' bounty to /output/entry.txt, deterministically.
+
+Run with --stdout to print the text instead of writing the file.
+"""
+import argparse
 from pathlib import Path
 
 TEXT = "A dog on a warm doorstep, chin down, eyes half shut, certain the day is fine. It is. The sun crosses one board and then another. Nobody moves the dog."
@@ -15,8 +20,14 @@ def validate(text: str) -> None:
         raise SystemExit("TEXT must not be only whitespace")
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(description="Write the bounty entry text.")
+    parser.add_argument("--stdout", action="store_true", help="print the text and do not write the file")
+    args = parser.parse_args(argv)
     validate(TEXT)
+    if args.stdout:
+        print(TEXT)
+        return
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(TEXT, encoding="utf-8", newline="")
     print(f"Wrote {len(TEXT)} code points to {OUTPUT_FILE}")
