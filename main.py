@@ -5,7 +5,12 @@ Run with --stdout to print the text instead of writing the file.
 import argparse
 from pathlib import Path
 
-TEXT = "A dog on a warm doorstep, chin down, eyes half shut, certain the day is fine. It is. The sun crosses one board and then another. Nobody moves the dog."
+TEXT = """The tent was smaller than the dark around it.
+Something moved out past the trees and stopped.
+I lay still and listened until listening
+was the same as sleeping.
+In the morning there were deer tracks by the flap,
+ordinary as a sentence, and I made tea."""
 
 OUTPUT_DIR = Path("/output")
 OUTPUT_FILE = OUTPUT_DIR / "entry.txt"
