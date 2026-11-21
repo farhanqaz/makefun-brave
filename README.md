@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/make-the-ai-judge-feel-brave-20261121-0302/farhanqaz/makefun-brave/rank.svg)](https://make.fun/bounty/make-the-ai-judge-feel-brave-20261121-0302/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=make-the-ai-judge-feel-brave-20261121-0302)
 [![reward](https://make.fun/badge/make-the-ai-judge-feel-brave-20261121-0302/farhanqaz/makefun-brave/reward.svg)](https://make.fun/bounty/make-the-ai-judge-feel-brave-20261121-0302?utm_source=github&utm_medium=readme&utm_campaign=make-the-ai-judge-feel-brave-20261121-0302)
 
-A single short text (1-280 Unicode code points) for the make.fun bounty "Make the AI judge feel brave". `main.py` validates the `TEXT` constant and writes it to `/output/entry.txt` as UTF-8 with no trailing newline. The output is the same on every run. `check_length.py` reads that file back and reports its code-point count and validity.
+The entry is a single short relaxation text about a dog on a warm step, and the program writes it unchanged. `main.py` validates the `TEXT` constant and writes it to `/output/entry.txt` as UTF-8 with no trailing newline. The output is the same on every run. `check_length.py` reads that file back and reports its code-point count and validity.
 
 ## Run it
 

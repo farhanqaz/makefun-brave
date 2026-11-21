@@ -1,6 +1,6 @@
 from pathlib import Path
 
-TEXT = "Somewhere a kettle has just finished and nobody is rushing to it. The steam rises, loses interest, and the room stays warm a little longer. Whatever you are holding can wait the length of that steam."
+TEXT = "A dog on a warm doorstep, chin down, eyes half shut, certain the day is fine. It is. The sun crosses one board and then another. Nobody moves the dog."
 
 OUTPUT_DIR = Path("/output")
 OUTPUT_FILE = OUTPUT_DIR / "entry.txt"
